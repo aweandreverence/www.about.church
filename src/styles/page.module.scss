@@ -1,0 +1,294 @@
+.pageHeader {
+    background: linear-gradient(135deg, var(--color-navy, #1a365d) 0%, var(--color-navy-light, #2a4a7f) 100%);
+    color: var(--color-white, #ffffff);
+    padding: 3rem 1rem;
+    text-align: center;
+    margin: -2rem -1rem 2rem;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.pageTitle {
+    color: var(--color-white, #ffffff);
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.pageSubtitle {
+    opacity: 0.85;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Requirements page */
+.reqSection {
+    background: var(--color-white, #ffffff);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--color-border, #e2e8f0);
+}
+
+.reqNumber {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--color-teal, #2c7a7b);
+    color: var(--color-white, #ffffff);
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+.reqTitle {
+    display: flex;
+    align-items: center;
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+}
+
+.reqBody {
+    padding-left: 0.5rem;
+
+    p {
+        color: var(--color-text, #2d3748);
+        line-height: 1.8;
+    }
+
+    ul {
+        color: var(--color-text, #2d3748);
+        line-height: 1.8;
+        padding-left: 1.25rem;
+    }
+}
+
+.defBox {
+    background: var(--color-bg-alt, #edf2f7);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+
+    h4 {
+        font-size: 1rem;
+        color: var(--color-teal, #2c7a7b);
+        margin-bottom: 0.25rem;
+    }
+
+    p {
+        margin: 0;
+        font-size: 0.95rem;
+    }
+}
+
+/* Checklist page */
+.checklist {
+    counter-reset: checklist-counter;
+}
+
+.checklistStep {
+    background: var(--color-white, #ffffff);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--color-border, #e2e8f0);
+    counter-increment: checklist-counter;
+}
+
+.stepHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.stepNumber {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    background: var(--color-gold, #d69e2e);
+    color: var(--color-navy, #1a365d);
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.stepTitle {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.stepBody {
+    padding-left: 0.5rem;
+
+    p, li {
+        line-height: 1.8;
+    }
+
+    ul {
+        padding-left: 1.25rem;
+    }
+}
+
+.checkItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    line-height: 1.6;
+
+    &::before {
+        content: "☐";
+        font-size: 1.2rem;
+        color: var(--color-teal, #2c7a7b);
+        flex-shrink: 0;
+        margin-top: 0.1rem;
+    }
+}
+
+.tipBox {
+    background: #fffff0;
+    border: 1px solid var(--color-gold, #d69e2e);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+
+    strong {
+        color: var(--color-gold, #d69e2e);
+    }
+}
+
+.warningBox {
+    background: #fff5f5;
+    border: 1px solid var(--color-danger, #e53e3e);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+
+    strong {
+        color: var(--color-danger, #e53e3e);
+    }
+}
+
+/* Resources page */
+.resourceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.resourceCard {
+    background: var(--color-white, #ffffff);
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--color-border, #e2e8f0);
+    transition: all 0.2s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+        font-size: 1.15rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: var(--color-text-muted, #718096);
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 0.75rem;
+    }
+}
+
+.resourceLink {
+    display: inline-block;
+    color: var(--color-teal, #2c7a7b);
+    font-weight: 600;
+    font-size: 0.9rem;
+
+    &:hover {
+        color: var(--color-navy, #1a365d);
+    }
+}
+
+.faqSection {
+    margin: 3rem 0;
+}
+
+.faqItem {
+    background: var(--color-white, #ffffff);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--color-border, #e2e8f0);
+
+    h3 {
+        font-size: 1.1rem;
+        color: var(--color-navy, #1a365d);
+        margin-bottom: 0.75rem;
+    }
+
+    p {
+        color: var(--color-text, #2d3748);
+        line-height: 1.7;
+        margin: 0;
+    }
+}
+
+/* About page */
+.aboutContent {
+    max-width: 800px;
+    margin: 0 auto;
+
+    p {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        margin-bottom: 1.25rem;
+    }
+
+    h2 {
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.missionBox {
+    background: linear-gradient(135deg, var(--color-navy, #1a365d) 0%, var(--color-teal, #2c7a7b) 100%);
+    color: var(--color-white, #ffffff);
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
+
+    h2 {
+        color: var(--color-white, #ffffff);
+        margin-bottom: 1rem;
+    }
+
+    p {
+        opacity: 0.9;
+        font-size: 1.15rem;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

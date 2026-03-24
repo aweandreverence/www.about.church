@@ -1,0 +1,22 @@
+$timesnewroman: "Times New Roman", Times, Serif;
+$helvetica: "Helvetica Neue", Helvetica, Arial;
+$georgia: Georgia, Times, "Times New Roman";
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    flex: 1;
+    font-family: $helvetica;
+
+    a {
+        text-decoration: underline;
+    }
+}
