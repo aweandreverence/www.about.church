@@ -32,10 +32,7 @@ export default function Home() {
                 </p>
                 <div className={css.cardGrid}>
                     <div className={css.card}>
-                        <h3>
-                            <span className={css.cardIcon}>📖</span>
-                            Faithful Preaching
-                        </h3>
+                        <h3>Faithful Preaching</h3>
                         <p>
                             The church is &ldquo;the pillar and ground of the
                             truth&rdquo; (1 Tim 3:15). A good church proclaims
@@ -44,10 +41,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className={css.card}>
-                        <h3>
-                            <span className={css.cardIcon}>🤝</span>
-                            Gospel Community
-                        </h3>
+                        <h3>Gospel Community</h3>
                         <p>
                             &ldquo;And let us consider how to stir up one another
                             to love and good works, not neglecting to meet
@@ -56,10 +50,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className={css.card}>
-                        <h3>
-                            <span className={css.cardIcon}>🛡️</span>
-                            Accountability &amp; Discipleship
-                        </h3>
+                        <h3>Accountability &amp; Discipleship</h3>
                         <p>
                             The local church provides the structure for
                             discipleship, correction, and spiritual growth that
@@ -67,10 +58,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className={css.card}>
-                        <h3>
-                            <span className={css.cardIcon}>🍞</span>
-                            Ordinances
-                        </h3>
+                        <h3>Ordinances</h3>
                         <p>
                             Baptism and the Lord&rsquo;s Supper are given to the
                             church&mdash;they are meant to be practiced in the
