@@ -17,6 +17,7 @@ export default function Page({ children }) {
     const path = router.pathname;
     return (
         <div className={css.container}>
+            <a href="#main-content" className="skip-link">Skip to content</a>
             <Head>
                 <title>
                     {PAGE_TITLES[path]} | {SITE_TITLE}
@@ -33,7 +34,7 @@ export default function Page({ children }) {
             <CommonCSS />
             <CommonJS />
             <Header />
-            <main className={css.main}>
+            <main id="main-content" className={css.main}>
                 {children}
             </main>
             <Footer />
