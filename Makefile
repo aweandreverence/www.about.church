@@ -6,11 +6,11 @@ help:
 
 ## install - install dependency packages
 install:
-	yarn install
+	npm install
 
 ## dev - starts the Next.js development server on port 3000
 dev: install
-	yarn run dev
+	npm run dev
 
 ## run - alias for dev
 run: dev
@@ -21,7 +21,7 @@ clean:
 
 ## build - build the app for release
 build: clean install
-	yarn build
+	npm run build
 	rm -rf $(BUILD_DIR)
 	mv out $(BUILD_DIR)
 	cp CNAME $(BUILD_DIR)/
@@ -35,8 +35,8 @@ deploy: build
 
 ## format - format code with prettier
 format:
-	yarn format
+	npm run format
 
 ## format-check - check code formatting
 format-check:
-	yarn format:check
+	npm run format:check
