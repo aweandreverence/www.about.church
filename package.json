@@ -4,10 +4,11 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "next build && next export",
+        "build": "npm run generate:seo && next build && next export",
         "start": "next start",
         "format": "prettier --write .",
-        "format:check": "prettier --check ."
+        "format:check": "prettier --check .",
+        "generate:seo": "node scripts/generate-seo-files.js"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.32",
