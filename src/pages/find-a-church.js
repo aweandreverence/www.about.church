@@ -8,18 +8,18 @@ export default function FindAChurch() {
             <div className={css.pageHeader}>
                 <h1 className={css.pageTitle}>Find a Church</h1>
                 <p className={css.pageSubtitle}>
-                    Curated church finder tools from denominations and
-                    organizations that hold to the Biblical gospel
+                    Church finder tools to help you look for a faithful local
+                    church, including in Sydney, Australia
                 </p>
             </div>
 
             <div className={css.aboutContent}>
                 <p>
-                    Below is a curated collection of church finder tools from
-                    denominations and ministries we believe generally hold to the
-                    5 Solas and the Biblical gospel. Each link will take you
-                    to an external search tool where you can look for a church
-                    near you.
+                    Our aim is to help you find a church grounded in the 5 Solas
+                    and the Biblical gospel. These external directories are
+                    starting points, not endorsements of every listed
+                    congregation. Check each church&rsquo;s beliefs and teaching
+                    for yourself.
                 </p>
 
                 <div className={css.tipBox}>
@@ -31,6 +31,78 @@ export default function FindAChurch() {
                         <a>What to Look For</a>
                     </Link>{' '}
                     guide.
+                </div>
+
+                <h2 id="australia-sydney">Australia &amp; Sydney</h2>
+                <p>
+                    No nearby results in The Master&rsquo;s Seminary finder? It
+                    lists churches led by its graduates, not every faithful
+                    church. For Sydney and its suburbs, try these local
+                    resources. Search by suburb or postcode where available, and
+                    confirm meeting details with the church before visiting.
+                </p>
+
+                <div className={css.resourceGrid}>
+                    <div className={css.resourceCard}>
+                        <h3>FIEC Australia</h3>
+                        <p>
+                            The Fellowship of Independent Evangelical Churches
+                            has a national directory with a New South Wales
+                            section. Its statement of faith affirms the
+                            authority and sufficiency of Scripture and salvation
+                            entirely by God&rsquo;s grace through Jesus Christ.
+                        </p>
+                        <a
+                            className={css.resourceLink}
+                            href="https://www.fiec.org.au/churches"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Browse FIEC Churches →
+                        </a>
+                        <p>
+                            Sydney-area examples linked from the directory
+                            include{' '}
+                            <a
+                                href="https://eccsydney.org.au/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Evangelical Chinese Church (North Parramatta)
+                            </a>{' '}
+                            and{' '}
+                            <a
+                                href="https://www.swec.org.au/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                South-West Evangelical Church (Kingsgrove)
+                            </a>
+                            . If the embedded map or list does not load, these
+                            church websites provide a starting point.
+                        </p>
+                    </div>
+
+                    <div className={css.resourceCard}>
+                        <h3>Sydney Anglicans: Church Near You</h3>
+                        <p>
+                            A suburb, postcode, or language search linked by the
+                            Anglican Diocese of Sydney. The diocese&rsquo;s
+                            published doctrine affirms Scripture as supreme
+                            authority and justification by faith only through
+                            Christ. This is a local directory lead, not a claim
+                            about all Anglican churches; assess each
+                            congregation&rsquo;s teaching and practice.
+                        </p>
+                        <a
+                            className={css.resourceLink}
+                            href="https://churchnearyou.com.au/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Search Sydney Churches →
+                        </a>
+                    </div>
                 </div>
 
                 <h2>Denomination &amp; Association Finders</h2>
@@ -57,7 +129,8 @@ export default function FindAChurch() {
                         <h3>PCA Church Search</h3>
                         <p>
                             Presbyterian Church in America — Reformed,
-                            confessional, committed to the Westminster Standards.
+                            confessional, committed to the Westminster
+                            Standards.
                         </p>
                         <a
                             className={css.resourceLink}
@@ -203,7 +276,8 @@ export default function FindAChurch() {
                             style={{ color: 'var(--color-gold-light)' }}
                         >
                             Awe &amp; Reverence
-                        </a>.
+                        </a>
+                        .
                     </p>
                 </div>
             </div>
