@@ -102,3 +102,15 @@
         border-radius: 0;
     }
 }
+
+.logo:focus-visible,
+.navLink:focus-visible,
+.mobileToggle:focus-visible {
+    outline: 3px solid var(--color-gold, #d69e2e);
+    outline-offset: 3px;
+}
+
+.mobileToggle {
+    min-width: 44px;
+    min-height: 44px;
+}
