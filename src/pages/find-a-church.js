@@ -8,8 +8,8 @@ export default function FindAChurch() {
             <div className={css.pageHeader}>
                 <h1 className={css.pageTitle}>Find a Church</h1>
                 <p className={css.pageSubtitle}>
-                    Church finder tools to help you look for a faithful local
-                    church, including in Sydney, Australia
+                    Find a faithful local church: explore church directories by
+                    network, denomination, or region
                 </p>
             </div>
 
@@ -19,7 +19,9 @@ export default function FindAChurch() {
                     and the Biblical gospel. These external directories are
                     starting points, not endorsements of every listed
                     congregation. Check each church&rsquo;s beliefs and teaching
-                    for yourself.
+                    for yourself. Our vision is to help people find faithful
+                    churches worldwide; today this is a selected set of
+                    resources, not a comprehensive global directory.
                 </p>
 
                 <div className={css.tipBox}>
@@ -33,79 +35,114 @@ export default function FindAChurch() {
                     guide.
                 </div>
 
-                <h2 id="australia-sydney">Australia &amp; Sydney</h2>
+                <nav
+                    aria-label="Church finder sections"
+                    className={css.finderNav}
+                >
+                    <strong>Explore the directories</strong>
+                    <ul>
+                        <li>
+                            <a href="#network-directories">
+                                Ministry &amp; network directories
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#denomination-finders">
+                                Denomination &amp; association finders
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#regional-resources">Regional resources</a>{' '}
+                            ·{' '}
+                            <a href="#australia-sydney">
+                                Australia &amp; Sydney
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#suggest-resource">Suggest a resource</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h2
+                    id="network-directories"
+                    tabIndex={-1}
+                    className={css.finderHeading}
+                >
+                    Ministry &amp; Network Directories
+                </h2>
                 <p>
-                    No nearby results in The Master&rsquo;s Seminary finder? It
-                    lists churches led by its graduates, not every faithful
-                    church. For Sydney and its suburbs, try these local
-                    resources. Search by suburb or postcode where available, and
-                    confirm meeting details with the church before visiting.
+                    Start with these broader networks, then try a denomination
+                    or a regional resource below. Country coverage and search
+                    options vary; no results does not mean there are no faithful
+                    churches nearby.
                 </p>
 
                 <div className={css.resourceGrid}>
                     <div className={css.resourceCard}>
-                        <h3>FIEC Australia</h3>
+                        <h3>9Marks Church Search</h3>
                         <p>
-                            The Fellowship of Independent Evangelical Churches
-                            has a national directory with a New South Wales
-                            section. Its statement of faith affirms the
-                            authority and sufficiency of Scripture and salvation
-                            entirely by God&rsquo;s grace through Jesus Christ.
+                            Find churches committed to the 9 marks of a healthy
+                            church — expositional preaching, Biblical theology,
+                            the gospel, and more.
                         </p>
                         <a
                             className={css.resourceLink}
-                            href="https://www.fiec.org.au/churches"
+                            href="https://www.9marks.org/church-search/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Browse FIEC Churches →
+                            Search 9Marks →
                         </a>
-                        <p>
-                            Sydney-area examples linked from the directory
-                            include{' '}
-                            <a
-                                href="https://eccsydney.org.au/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Evangelical Chinese Church (North Parramatta)
-                            </a>{' '}
-                            and{' '}
-                            <a
-                                href="https://www.swec.org.au/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                South-West Evangelical Church (Kingsgrove)
-                            </a>
-                            . If the embedded map or list does not load, these
-                            church websites provide a starting point.
-                        </p>
                     </div>
 
                     <div className={css.resourceCard}>
-                        <h3>Sydney Anglicans: Church Near You</h3>
+                        <h3>Acts 29 Network</h3>
                         <p>
-                            A suburb, postcode, or language search linked by the
-                            Anglican Diocese of Sydney. The diocese&rsquo;s
-                            published doctrine affirms Scripture as supreme
-                            authority and justification by faith only through
-                            Christ. This is a local directory lead, not a claim
-                            about all Anglican churches; assess each
-                            congregation&rsquo;s teaching and practice.
+                            A global church-planting network of Reformed,
+                            gospel-centered churches.
                         </p>
                         <a
                             className={css.resourceLink}
-                            href="https://churchnearyou.com.au/"
+                            href="https://www.acts29.com/find-a-church/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Search Sydney Churches →
+                            Find Acts 29 Churches →
+                        </a>
+                    </div>
+
+                    <div className={css.resourceCard}>
+                        <h3>The Gospel Coalition</h3>
+                        <p>
+                            TGC&rsquo;s directory of churches whose leaders
+                            affirm their confessional statement rooted in
+                            Reformed theology.
+                        </p>
+                        <a
+                            className={css.resourceLink}
+                            href="https://www.thegospelcoalition.org/churches/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            TGC Church Directory →
                         </a>
                     </div>
                 </div>
 
-                <h2>Denomination &amp; Association Finders</h2>
+                <h2
+                    id="denomination-finders"
+                    tabIndex={-1}
+                    className={css.finderHeading}
+                >
+                    Denomination &amp; Association Finders
+                </h2>
+                <p>
+                    Search within a particular tradition or training network.
+                    Many of these directories focus on North America; coverage
+                    varies by organization. The TMS finder lists graduate-led
+                    churches, not every faithful church.
+                </p>
 
                 <div className={css.resourceGrid}>
                     <div className={css.resourceCard}>
@@ -208,65 +245,102 @@ export default function FindAChurch() {
                     </div>
                 </div>
 
-                <h2>Ministry &amp; Network Directories</h2>
+                <h2
+                    id="regional-resources"
+                    tabIndex={-1}
+                    className={css.finderHeading}
+                >
+                    Regional Resources
+                </h2>
+                <h3
+                    id="australia-sydney"
+                    tabIndex={-1}
+                    className={css.finderHeading}
+                >
+                    Australia &amp; Sydney
+                </h3>
+                <p>
+                    No nearby results in The Master&rsquo;s Seminary finder? It
+                    lists churches led by its graduates, not every faithful
+                    church. For Sydney and its suburbs, try these local
+                    resources. Search by suburb or postcode where available, and
+                    confirm meeting details with the church before visiting.
+                </p>
 
                 <div className={css.resourceGrid}>
                     <div className={css.resourceCard}>
-                        <h3>9Marks Church Search</h3>
+                        <h4>FIEC Australia</h4>
                         <p>
-                            Find churches committed to the 9 marks of a healthy
-                            church — expositional preaching, Biblical theology,
-                            the gospel, and more.
+                            The Fellowship of Independent Evangelical Churches
+                            has a national directory with a New South Wales
+                            section. Its statement of faith affirms the
+                            authority and sufficiency of Scripture and salvation
+                            entirely by God&rsquo;s grace through Jesus Christ.
                         </p>
                         <a
                             className={css.resourceLink}
-                            href="https://www.9marks.org/church-search/"
+                            href="https://www.fiec.org.au/churches"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Search 9Marks →
+                            Browse FIEC Churches →
                         </a>
+                        <p>
+                            Sydney-area examples linked from the directory
+                            include{' '}
+                            <a
+                                href="https://eccsydney.org.au/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Evangelical Chinese Church (North Parramatta)
+                            </a>{' '}
+                            and{' '}
+                            <a
+                                href="https://www.swec.org.au/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                South-West Evangelical Church (Kingsgrove)
+                            </a>
+                            . If the embedded map or list does not load, these
+                            church websites provide a starting point.
+                        </p>
                     </div>
 
                     <div className={css.resourceCard}>
-                        <h3>Acts 29 Network</h3>
+                        <h4>Sydney Anglicans: Church Near You</h4>
                         <p>
-                            A global church-planting network of Reformed,
-                            gospel-centered churches.
+                            A suburb, postcode, or language search linked by the
+                            Anglican Diocese of Sydney. The diocese&rsquo;s
+                            published doctrine affirms Scripture as supreme
+                            authority and justification by faith only through
+                            Christ. This is a local directory lead, not a claim
+                            about all Anglican churches; assess each
+                            congregation&rsquo;s teaching and practice.
                         </p>
                         <a
                             className={css.resourceLink}
-                            href="https://www.acts29.com/find-a-church/"
+                            href="https://churchnearyou.com.au/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Find Acts 29 Churches →
-                        </a>
-                    </div>
-
-                    <div className={css.resourceCard}>
-                        <h3>The Gospel Coalition</h3>
-                        <p>
-                            TGC&rsquo;s directory of churches whose leaders
-                            affirm their confessional statement rooted in
-                            Reformed theology.
-                        </p>
-                        <a
-                            className={css.resourceLink}
-                            href="https://www.thegospelcoalition.org/churches/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            TGC Church Directory →
+                            Search Sydney Churches →
                         </a>
                     </div>
                 </div>
 
                 <div className={css.missionBox}>
-                    <h2>Don&rsquo;t See Your Denomination?</h2>
+                    <h2
+                        id="suggest-resource"
+                        tabIndex={-1}
+                        className={css.finderHeading}
+                    >
+                        Missing a Resource for Your Region?
+                    </h2>
                     <p>
-                        This is not an exhaustive list. If you know of a
-                        faithful denomination or association that holds to the 5
+                        This is not an exhaustive list. If you know of a church
+                        finder, denomination, or association that holds to the 5
                         Solas and the Biblical gospel, we&rsquo;d love to hear
                         about it. Reach out to us through{' '}
                         <a

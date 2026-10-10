@@ -13,6 +13,19 @@ lead, not an endorsement of every congregation. Keep the five-solas / Biblical
 gospel scope explicit, use primary sources, and distinguish an association's
 published beliefs from a local church's actual teaching and practice.
 
+### Navigation and coverage
+
+The finder starts with broader ministry/network directories, followed by
+denomination/association finders and regional resources. Use the section links
+to jump directly to a category; existing Sydney links at
+`/find-a-church/#australia-sydney` remain supported. Mobile navigation exposes
+its expanded state and can be closed with Escape. Country coverage varies:
+this is a selected guide, not a comprehensive global directory.
+
+See [the global discovery roadmap](ROADMAP.md) for the proposed reviewed data
+workflow and accessible map/list application. No imports, scheduling, Sheets
+integration or interactive map are implemented by this navigation update.
+
 ### Australia / Sydney sources
 
 Reviewed 2026-10-10. These are editorial summaries and links, not reproduced

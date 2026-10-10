@@ -1,5 +1,9 @@
 .pageHeader {
-    background: linear-gradient(135deg, var(--color-navy, #1a365d) 0%, var(--color-navy-light, #2a4a7f) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--color-navy, #1a365d) 0%,
+        var(--color-navy-light, #2a4a7f) 100%
+    );
     color: var(--color-white, #ffffff);
     padding: 3rem 1rem;
     text-align: center;
@@ -135,7 +139,8 @@
 .stepBody {
     padding-left: 0.5rem;
 
-    p, li {
+    p,
+    li {
         line-height: 1.8;
     }
 
@@ -152,7 +157,7 @@
     line-height: 1.6;
 
     &::before {
-        content: "☐";
+        content: '☐';
         font-size: 1.2rem;
         color: var(--color-teal, #2c7a7b);
         flex-shrink: 0;
@@ -189,7 +194,7 @@
 /* Resources page */
 .resourceGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 1.5rem;
     margin: 2rem 0;
 }
@@ -206,7 +211,8 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    h3 {
+    h3,
+    h4 {
         font-size: 1.15rem;
         margin-bottom: 0.5rem;
     }
@@ -273,7 +279,11 @@
 }
 
 .missionBox {
-    background: linear-gradient(135deg, var(--color-navy, #1a365d) 0%, var(--color-teal, #2c7a7b) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--color-navy, #1a365d) 0%,
+        var(--color-teal, #2c7a7b) 100%
+    );
     color: var(--color-white, #ffffff);
     border-radius: 12px;
     padding: 2.5rem;
@@ -290,5 +300,39 @@
         font-size: 1.15rem;
         max-width: 600px;
         margin: 0 auto;
+    }
+}
+
+/* Finder links remain usable without JavaScript and below the sticky header. */
+.finderHeading {
+    scroll-margin-top: 7rem;
+}
+
+.finderNav {
+    background: var(--color-bg-alt, #f5f3ef);
+    border: 1px solid var(--color-navy, #1a365d);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 2rem 0;
+
+    ul {
+        margin: 0.5rem 0 0;
+        padding-left: 1.25rem;
+    }
+
+    a {
+        display: inline-block;
+        padding: 0.625rem 0;
+        color: var(--color-navy, #1a365d);
+        text-decoration: underline;
+    }
+
+    a:hover {
+        text-decoration-thickness: 2px;
+    }
+
+    a:focus-visible {
+        outline: 3px solid var(--color-navy, #1a365d);
+        outline-offset: 3px;
     }
 }
