@@ -140,8 +140,7 @@ export default function FindAChurch() {
                 <p>
                     Search within a particular tradition or training network.
                     Many of these directories focus on North America; coverage
-                    varies by organization. The TMS finder lists graduate-led
-                    churches, not every faithful church.
+                    varies by organization.
                 </p>
 
                 <div className={css.resourceGrid}>
@@ -260,11 +259,10 @@ export default function FindAChurch() {
                     Australia &amp; Sydney
                 </h3>
                 <p>
-                    No nearby results in The Master&rsquo;s Seminary finder? It
-                    lists churches led by its graduates, not every faithful
-                    church. For Sydney and its suburbs, try these local
-                    resources. Search by suburb or postcode where available, and
-                    confirm meeting details with the church before visiting.
+                    Explore church directories serving Australia, including
+                    Sydney and its suburbs. Search by suburb or postcode where
+                    available, and confirm meeting details with the church
+                    before visiting.
                 </p>
 
                 <div className={css.resourceGrid}>

@@ -20,7 +20,9 @@ denomination/association finders and regional resources. Use the section links
 to jump directly to a category; existing Sydney links at
 `/find-a-church/#australia-sydney` remain supported. Mobile navigation exposes
 its expanded state and can be closed with Escape. Country coverage varies:
-this is a selected guide, not a comprehensive global directory.
+this is a selected guide, not a comprehensive global directory. Keep regional
+introductions reader-focused; explain an individual directory's scope within its
+own card rather than framing a region around that directory's search results.
 
 See [the global discovery roadmap](ROADMAP.md) for the proposed reviewed data
 workflow and accessible map/list application. No imports, scheduling, Sheets
